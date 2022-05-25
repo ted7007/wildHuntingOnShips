@@ -1,0 +1,16 @@
+#BlueJ class context
+<<<<<<< HEAD
+comment0.target=Enemy
+=======
+comment0.target=enemy
+>>>>>>> e4df7943f36226bdd5e42f1f221310eaf3395ca6
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ enemy\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=void\ act()
+comment2.params=hp\ velocity
+<<<<<<< HEAD
+comment2.target=Enemy(int,\ int)
+=======
+comment2.target=enemy(int,\ int)
+>>>>>>> e4df7943f36226bdd5e42f1f221310eaf3395ca6
+numComments=3
