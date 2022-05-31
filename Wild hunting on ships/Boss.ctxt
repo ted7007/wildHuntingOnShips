@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Boss
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Boss\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=hp\ velocity\ defaultDamage\ bulletVelocity
+comment1.target=Boss(int,\ int,\ int,\ int)
+comment2.params=damage
+comment2.target=void\ minusHp(int)
+comment3.params=
+comment3.target=void\ Destroy()
+numComments=4

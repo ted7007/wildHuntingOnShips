@@ -9,4 +9,6 @@ comment3.params=
 comment3.target=void\ checkMove()
 comment4.params=
 comment4.target=void\ checkShot()
-numComments=5
+comment5.params=damage
+comment5.target=void\ minusHp(int)
+numComments=6

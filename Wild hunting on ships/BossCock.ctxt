@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=BossCock
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ BossCock\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=hp\ velocity\ defaultDamage\ bulletVelocity\ defaultCd
+comment1.target=BossCock(int,\ int,\ int,\ int,\ int)
+comment2.params=
+comment2.target=void\ act()
+comment2.text=\r\n\ Act\ -\ do\ whatever\ the\ BossCock\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+comment3.params=index
+comment3.target=void\ goToTarget(int)
+comment4.params=index
+comment4.target=boolean\ gotTarget(int)
+comment5.params=
+comment5.target=void\ ShotOnPlayer()
+numComments=6

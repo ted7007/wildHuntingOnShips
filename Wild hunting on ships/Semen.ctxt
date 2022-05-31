@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Semen
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Semen\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=targetX\ targetY\ velocity\ damage\ damagePlayer
+comment1.target=Semen(int,\ int,\ int,\ int,\ boolean)
+comment2.params=
+comment2.target=void\ CheckGetTarget()
+comment3.params=
+comment3.target=void\ GoToTarget()
+numComments=4

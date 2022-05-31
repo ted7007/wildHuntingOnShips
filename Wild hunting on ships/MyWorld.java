@@ -17,17 +17,7 @@ public class MyWorld extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(1200, 700, 1); 
-<<<<<<< HEAD
         prepare();
-        spawnEnemies();
-=======
-
-        addObject(new MainHero(100,3), 100, 100);
-        addObject(new enemy(100,3), Greenfoot.getRandomNumber(800), Greenfoot.getRandomNumber(800));
-        addObject(new enemy(100,3), Greenfoot.getRandomNumber(800), Greenfoot.getRandomNumber(800));
-        addObject(new enemy(100,3), Greenfoot.getRandomNumber(800), Greenfoot.getRandomNumber(800));
-        prepare();
->>>>>>> e4df7943f36226bdd5e42f1f221310eaf3395ca6
     }
     
     /**
@@ -36,16 +26,23 @@ public class MyWorld extends World
      */
     private void prepare()
     {
-<<<<<<< HEAD
         addObject(new MainHero(100,3), 100, 100);
+        spawnEnemies();
+        
     }
+
     private void spawnEnemies()
     {
-        Enemy enemy = new Enemy(100, 3);
+        Target target = new Target();
+        addObject(target,364,545);
+        Target target2 = new Target();
+        addObject(target2,832,540);
+        Target target3 = new Target();
+        addObject(target3,886,286);
+        BossCock bossCock = new BossCock(50, 4, 15, 3,60);
+        addObject(bossCock,636,424);
+        //Enemy enemy = new Enemy(100, 3);
         
-        addObject(enemy, Greenfoot.getRandomNumber(800), Greenfoot.getRandomNumber(800));
-        
-=======
->>>>>>> e4df7943f36226bdd5e42f1f221310eaf3395ca6
+        //addObject(enemy, Greenfoot.getRandomNumber(800), Greenfoot.getRandomNumber(800));
     }
 }

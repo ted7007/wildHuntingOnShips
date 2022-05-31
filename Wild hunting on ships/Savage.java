@@ -6,27 +6,20 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Savage extends Actor
+public class Savage extends Actor implements ILiveable
 {
-    private int HP;
+    protected int Hp;
     
     protected int Velocity;
     
-<<<<<<< HEAD
     protected int SpearVelocity;
     
     protected int SpearDamage;
-    
-=======
->>>>>>> e4df7943f36226bdd5e42f1f221310eaf3395ca6
     public Savage(int hp, int velocity)
     {
-        HP = hp;
+        Hp = hp;
         Velocity = velocity;
-<<<<<<< HEAD
         SpearVelocity = 7; SpearDamage = 34;
-=======
->>>>>>> e4df7943f36226bdd5e42f1f221310eaf3395ca6
     }
     /**
      * Act - do whatever the Savage wants to do. This method is called whenever
@@ -37,14 +30,14 @@ public class Savage extends Actor
         // Add your action code here.
     }
     
-    public int getHP() {return HP; }
+    public int getHp() {return Hp; }
     
     
-    public void minusHP(int damage)
+    public void minusHp(int damage)
     {
     
-        HP = HP - damage;
-        if (HP <= 0) 
+        Hp = Hp - damage;
+        if (Hp <= 0) 
         {
             getWorld().removeObject(this);
         }  
@@ -57,10 +50,6 @@ public class Savage extends Actor
     
     public void Shot(int targetX, int targetY)
     {
-<<<<<<< HEAD
-        getWorld().addObject(new Spear(targetX,targetY,SpearVelocity,SpearDamage),getX(),getY());
-=======
-        getWorld().addObject(new Spear(targetX,targetY,10,10),getX(),getY());
->>>>>>> e4df7943f36226bdd5e42f1f221310eaf3395ca6
+        getWorld().addObject(new Spear(targetX,targetY,SpearVelocity,SpearDamage, false),getX(),getY());
     }
 }

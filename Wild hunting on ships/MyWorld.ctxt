@@ -7,10 +7,6 @@ comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ MyWorld.\r\n\ \r\n
 comment2.params=
 comment2.target=void\ prepare()
 comment2.text=\r\n\ Prepare\ the\ world\ for\ the\ start\ of\ the\ program.\r\n\ That\ is\:\ create\ the\ initial\ objects\ and\ add\ them\ to\ the\ world.\r\n
-<<<<<<< HEAD
 comment3.params=
 comment3.target=void\ spawnEnemies()
 numComments=4
-=======
-numComments=3
->>>>>>> e4df7943f36226bdd5e42f1f221310eaf3395ca6

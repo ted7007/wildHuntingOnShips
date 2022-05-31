@@ -62,4 +62,14 @@ public class MainHero extends Savage
         }
         
     }
+    
+    @Override
+    public void minusHp(int damage)
+    {
+        Hp = Hp - damage;
+        if (Hp <= 0) 
+        {
+            Greenfoot.stop();
+        }  
+    }
 }

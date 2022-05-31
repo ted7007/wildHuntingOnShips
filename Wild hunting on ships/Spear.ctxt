@@ -1,22 +1,12 @@
 #BlueJ class context
 comment0.target=Spear
 comment0.text=\r\n\ Write\ a\ description\ of\ class\ Spear\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
-comment1.params=targetX\ targetY\ velocity\ damage
-comment1.target=Spear(int,\ int,\ int,\ int)
+comment1.params=targetX\ targetY\ velocity\ damage\ damagePlayer
+comment1.target=Spear(int,\ int,\ int,\ int,\ boolean)
 comment2.params=
 comment2.target=void\ act()
 comment3.params=
 comment3.target=void\ GoToTarget()
 comment4.params=
 comment4.target=void\ CheckGetTarget()
-comment5.params=
-comment5.target=boolean\ isGotPoint()
-comment6.params=enemy
-<<<<<<< HEAD
-comment6.target=void\ Hurt(Enemy)
-=======
-comment6.target=void\ Hurt(enemy)
->>>>>>> e4df7943f36226bdd5e42f1f221310eaf3395ca6
-comment7.params=
-comment7.target=void\ Destroy()
-numComments=8
+numComments=5
