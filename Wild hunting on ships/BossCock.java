@@ -16,6 +16,17 @@ public class BossCock extends Boss
     int defaultCd;
     int currentCd;
     
+    int numberOfBossCocks = 4;
+    
+    GreenfootImage[] bossCockImages = new GreenfootImage[numberOfBossCocks];
+    int currentImage;
+    
+    int j = 0;
+    int numberOfBossCockImages = numberOfBossCocks;
+    int timeBreak;
+    int currentTimeBreak;
+    
+    
     public BossCock(int hp,int velocity, int defaultDamage, int bulletVelocity, int defaultCd)
     {
         super(hp,velocity,defaultDamage,bulletVelocity);
@@ -31,6 +42,16 @@ public class BossCock extends Boss
             currentTarget = 0;
         }
         
+        // animation
+        int i = 0;
+        while (i<4)
+        {
+            bossCockImages[i] = new GreenfootImage("BossCock" + (i+1) + ".png");
+            i++;    
+        }
+        currentImage = 0;
+        currentTimeBreak = 0;
+        timeBreak = defaultCd / numberOfBossCocks;
     }
     
     /**
@@ -46,6 +67,7 @@ public class BossCock extends Boss
         goToTarget(currentTarget);
         
         ShotOnPlayer();
+        Animate();
         // Add your action code here.
     }
     
@@ -70,6 +92,7 @@ public class BossCock extends Boss
     
     void ShotOnPlayer()
     {
+        //System.out.println(currentCd);
         if (currentCd < defaultCd)
         {
             currentCd++;
@@ -80,4 +103,21 @@ public class BossCock extends Boss
         getWorld().addObject(new Semen(player.getX(),player.getY(),bulletVelocity,defaultDamage,true),getX(),getY());
     }
     
+    void Animate()
+    {
+        System.out.println(timeBreak);
+        if (currentTimeBreak < timeBreak)
+        {
+            currentTimeBreak++;
+            return;
+        }
+        
+        currentTimeBreak = 0;
+        j++;
+        setImage("BossCock" + (j) + ".png");
+        if (j == numberOfBossCockImages)
+        {
+            j = 0;
+        }
+    }
 }

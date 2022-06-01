@@ -12,4 +12,6 @@ comment4.params=index
 comment4.target=boolean\ gotTarget(int)
 comment5.params=
 comment5.target=void\ ShotOnPlayer()
-numComments=6
+comment6.params=
+comment6.target=void\ Animate()
+numComments=7
