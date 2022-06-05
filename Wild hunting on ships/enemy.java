@@ -7,14 +7,14 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @version (a version number or a date)
  */
 
-public class Enemy extends Savage
+public class enemy extends Savage
 {
     public void act()
     {
         
     }
     
-    public Enemy(int hp, int velocity) 
+    public enemy(int hp, int velocity) 
     {
         super(hp,velocity);
 

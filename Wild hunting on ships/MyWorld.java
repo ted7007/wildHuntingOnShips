@@ -15,20 +15,15 @@ public class MyWorld extends World
      */
     public MyWorld()
     {    
-        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(1200, 700, 1); 
+        super(1200, 700, 1);
         prepare();
-    }
+        addObject(new heal(), Greenfoot.getRandomNumber(700), Greenfoot.getRandomNumber(700));
+        }
     
-    /**
-     * Prepare the world for the start of the program.
-     * That is: create the initial objects and add them to the world.
-     */
     private void prepare()
     {
         addObject(new MainHero(100,3), 100, 100);
         spawnEnemies();
-        
     }
 
     private void spawnEnemies()
@@ -45,4 +40,5 @@ public class MyWorld extends World
         
         //addObject(enemy, Greenfoot.getRandomNumber(800), Greenfoot.getRandomNumber(800));
     }
+     
 }
