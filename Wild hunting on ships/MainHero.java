@@ -13,13 +13,12 @@ public class MainHero extends Savage
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     private int cdShot;
-    private int heal = 15;
+    public int heal = 15;
     
     public void act()
     {
         checkMove();
         checkShot();
-        plusHp();
         Hpcheck();
     }
     
@@ -74,14 +73,15 @@ public class MainHero extends Savage
         }  
     }
     
-    public void plusHp()
+    public void plusHp(int heal)
     {
-        if (isTouching(heal.class))
+        Hp = Hp + heal;
+        /*if (isTouching(heal.class))
         {
             Hp = Hp + heal;
             Actor heal = getOneIntersectingObject(heal.class);
             getWorld().removeObject(heal);
-        }
+        }*/
     }
     
     public void Hpcheck()
