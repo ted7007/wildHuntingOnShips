@@ -6,11 +6,28 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class heal extends Actor
+public class Heal extends Actor
 {
-  public void plusHp()
+    protected int plusHp;
+    
+    public Heal(int plusHp)
     {
-        
+        this.plusHp = plusHp;
     }
+    
+    public void act()
+    {
+        TouchMainHero();
+    }
+    
+    public void TouchMainHero()
+    {
+        if (isTouching(MainHero.class))
+        {
+            var Hero = (MainHero)getOneIntersectingObject(MainHero.class);
+            Hero.plusHp(plusHp);
+            getWorld().removeObject(this);
+        }
+    } 
 }
 

@@ -17,7 +17,7 @@ public class MyWorld extends World
     {    
         super(1200, 700, 1);
         prepare();
-        addObject(new heal(), Greenfoot.getRandomNumber(700), Greenfoot.getRandomNumber(700));
+        addObject(new Heal(20), Greenfoot.getRandomNumber(700), Greenfoot.getRandomNumber(700));
         }
     
     private void prepare()
