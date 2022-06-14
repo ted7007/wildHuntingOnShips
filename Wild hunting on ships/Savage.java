@@ -15,11 +15,13 @@ public class Savage extends Actor implements ILiveable
     protected int SpearVelocity;
     
     protected int SpearDamage;
+    
+    protected int SpearCount;
     public Savage(int hp, int velocity)
     {
         Hp = hp;
         Velocity = velocity;
-        SpearVelocity = 7; SpearDamage = 34;
+        SpearVelocity = 7; SpearDamage = 34; SpearCount = 10;
     }
     /**
      * Act - do whatever the Savage wants to do. This method is called whenever
@@ -50,6 +52,10 @@ public class Savage extends Actor implements ILiveable
     
     public void Shot(int targetX, int targetY)
     {
-        getWorld().addObject(new Spear(targetX,targetY,SpearVelocity,SpearDamage, false),getX(),getY());
+        if(SpearCount > 0)
+        {
+            getWorld().addObject(new Spear(targetX,targetY,SpearVelocity,SpearDamage, false),getX(),getY());
+            SpearCount = SpearCount - 1;
+        }
     }
 }

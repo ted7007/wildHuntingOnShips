@@ -8,7 +8,6 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class MyWorld extends World
 {
-
     /**
      * Constructor for objects of class MyWorld.
      * 
@@ -17,12 +16,13 @@ public class MyWorld extends World
     {    
         super(1200, 700, 1);
         prepare();
-        addObject(new Heal(20), Greenfoot.getRandomNumber(700), Greenfoot.getRandomNumber(700));
         }
     
     private void prepare()
     {
         addObject(new MainHero(100,3), 100, 100);
+        addObject(new heal(20), Greenfoot.getRandomNumber(700), Greenfoot.getRandomNumber(700));
+        addObject(new SpearUP(10), Greenfoot.getRandomNumber(700), Greenfoot.getRandomNumber(700));
         spawnEnemies();
     }
 

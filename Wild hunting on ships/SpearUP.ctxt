@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=SpearUP
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ SpearUP\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=SpearUP
+comment1.target=SpearUP(int)
+comment2.params=
+comment2.target=void\ act()
+comment3.params=
+comment3.target=void\ TouchMainHero()
+numComments=4

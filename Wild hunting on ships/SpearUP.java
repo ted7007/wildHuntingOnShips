@@ -1,18 +1,18 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class heal here.
+ * Write a description of class SpearUP here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class heal extends Actor
+public class SpearUP extends Actor
 {
-    protected int plusHp;
+    protected int SpearUP;
     
-    public heal(int plusHp)
+    public SpearUP(int SpearUP)
     {
-        this.plusHp = plusHp;
+        this.SpearUP = SpearUP;
     }
     
     public void act()
@@ -25,9 +25,8 @@ public class heal extends Actor
         if (isTouching(MainHero.class))
         {
             var Hero = (MainHero)getOneIntersectingObject(MainHero.class);
-            Hero.plusHp(plusHp);
+            Hero.SpearUpdate(SpearUP);
             getWorld().removeObject(this);
         }
     } 
 }
-

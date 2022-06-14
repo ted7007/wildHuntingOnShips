@@ -14,12 +14,14 @@ public class MainHero extends Savage
      */
     private int cdShot;
     public int heal = 15;
+    public int SpearUP = 10;
     
     public void act()
     {
         checkMove();
         checkShot();
         Hpcheck();
+        SpearCheak();
     }
     
     public MainHero(int hp, int velocity) 
@@ -84,8 +86,17 @@ public class MainHero extends Savage
         }*/
     }
     
+    public void SpearUpdate(int SpearUP)
+    {
+        SpearCount = SpearCount + SpearUP;
+    }
+    
     public void Hpcheck()
     {
         getWorld().showText("hp:" + Hp,50,50);
+    }
+     public void SpearCheak()
+    {
+        getWorld().showText("spear:"+ SpearCount,50,70);
     }
 }
